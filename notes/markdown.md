@@ -1,4 +1,4 @@
-// notes/2025-08-10.md
+// notes/2025-08-11.md
 
 # LeetCode 今日紀錄 – 2025/08/09
 
@@ -14,3 +14,10 @@
 -用到 unordered_map 這個來當table
 -key 跟 value 花了一點時間搞懂
 -因為這題跟以前看過的 key 和 value 會相反
+
+# LeetCode 今日紀錄 - 2025/08/11
+
+##題目: Add Two Numbers (medium)
+-哈哈哈哈
+-格式不一樣
+-哈哈哈哈哈哈哈哈
