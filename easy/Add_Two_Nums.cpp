@@ -1,5 +1,45 @@
 // 2. Add_Two_Numbers
+// ListNode solution
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
+using namespace std;
+
+struct ListNode{
+    int val;
+    ListNode* next;
+    ListNode():val(0),next(nullptr){} //預設
+    ListNode(int x):val(x),next(nullptr){} //單參數
+    ListNode(int x, ListNode* next):val(x),next(next){} //雙參數
+};
+
+class Solution {
+    public:
+        ListNode* addTwoNumbers(ListNode* l1, ListNode* l2){
+            ListNode dummy; //假頭節點(方便處理)
+            ListNode* cur = &dummy;
+            int count = 0;
+
+            while(l1 != nullptr || l2 != nullptr || count){ //進位判斷
+                int x = (l1 != nullptr)? l1 -> val:0;
+                int y = (l2 != nullptr)? l2 -> val:0;
+
+                int sum = x + y + count;
+                count = sum/10;
+                cur -> next = new ListNode(sum%10);
+                cur = cur -> next;
+
+                if(l1 != nullptr) l1 = l1 -> next;
+                if(l2 != nullptr) l2 = l2 -> next;
+            }
+            return dummy.next;
+        }
+};
+// 2. Add_Two_Numbers
+// vector solution
+/*
 #include <iostream>
 #include <string>
 #include <vector>
@@ -63,3 +103,5 @@ int main() {
 
     return 0;
 }
+
+*/

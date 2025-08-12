@@ -1,4 +1,4 @@
-// notes/2025-08-11.md
+// notes/2025-08-12.md
 
 # LeetCode 今日紀錄 – 2025/08/09
 
@@ -17,7 +17,13 @@
 
 # LeetCode 今日紀錄 - 2025/08/11
 
-##題目: Add Two Numbers (medium)
+## 題目: Add Two Numbers (medium)
 -哈哈哈哈
 -格式不一樣
 -哈哈哈哈哈哈哈哈
+
+# LeetCode 今日紀錄 - 2025/08/12
+
+## 題目: Add Two Numbers (medium)
+-複習了ListNode and 我覺得蠻混亂的指標
+-順便學到了有關leetCode的很多規則
